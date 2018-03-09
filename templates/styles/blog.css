@@ -1,0 +1,29 @@
+.blog-preview {
+	
+}
+.blog-preview a {
+	display: block;
+}
+.blog-sidebar, .blog-side-year  {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.blog-side-year {
+}
+.blog-side-month {
+	font-size:18px;
+	margin-top:2px;
+	margin-left:5px;
+}
+.archive-post {
+	margin-left:10px;
+}
+.archive-post a {
+	font-size:16px;
+}
+.blog-year-link {
+	font-size:24px;
+	margin-top:10px;
+}
+

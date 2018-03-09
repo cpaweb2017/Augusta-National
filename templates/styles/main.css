@@ -1,0 +1,322 @@
+/* blank */ 
+
+html {font-size: 1em;}
+
+body {
+  background:#f7f7f7;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2em;
+  color: #333;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+p { margin-bottom: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.6px;}
+
+h1, h2, h3, h4 {
+  margin: 0.414em 0 0.5em;
+  font-family: ;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {  margin-top: 0;
+  font-size: 3.998em;
+  font-weight: 900;}
+
+h2 {font-size: 1.999em;
+	font-weight: 300;}
+
+h3 {font-size: 1.414em;
+	font-weight: 400;}
+
+h6 {
+	font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+small, .font_small {font-size: 0.707em;}
+
+img {
+	max-width:100%;
+}
+
+.top-bar {
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.footer-main {
+	background:#fff;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.footer-main,
+.copyright {
+	background:#2091a8;
+	color:#fff;
+	padding: 40px;
+}
+
+.copyright {
+	background-color: #222525;
+}
+
+.footer-main .text-md-right {
+	display: flex;
+}
+
+#share {
+	align-self: flex-end;
+	width: 100%; 
+}
+
+#top-bar a,
+.copyright a {
+	color:#fff !important;
+}
+
+#logo {
+	position:absolute;
+	top:15px;
+	left:15px;
+}
+
+#top-bar {
+	padding:20px;
+	padding-bottom:50px;
+	background:#2091a8;
+	color:#fff;
+}
+
+#menu-wrap {
+	position:relative;
+}
+
+#menu-wrap nav {
+	position:absolute;
+	background:#222525 !important;
+	left:0;
+	right:0;
+	z-index:999;
+	top:-30px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    text-align: center;
+    width: 100%;
+	justify-content:center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ccc;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.nav-link {
+	padding:10px 20px !important;
+}
+
+.slick-slide img {
+    height: calc(100vh - 96px);
+}
+
+#banner-wrap {
+	position:relative;
+}
+
+.banner-text-wrap {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0,0,0,0.5);
+}
+
+.banner-text {
+	font-size:24px;
+	color:#fff;
+	margin:10%;
+	text-align:center;
+}
+
+
+.index-banner-text p {
+	font-size:50px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+/* Buttons */
+
+.button-container {
+	margin-top: 50px; 
+}
+
+.button-container a,
+.banner-text a {
+    background-color: #2091a8;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* General */
+
+.main-title-container {
+	margin-bottom: 50px; 
+}
+
+/* Content-1 */
+
+.pre-title {
+    margin-bottom: 10px;
+    color: #2091a8;
+    text-shadow: none;
+    letter-spacing: 3.5px;
+    font-size: 18px;
+}
+
+#content-1 h2 {
+	margin-bottom: 30px;
+	line-height: 1.4;
+}
+
+#content-1 .right {
+	background:url(../../assets/files/1/banner.jpg);
+}
+
+#content-1 .left {
+	padding: 120px 150px; 
+}
+
+@media (max-width: 1400px) {
+	#content-1 .left {
+    padding: 50px 75px;
+	}
+} 
+
+.post,
+.post-head {
+	padding:0 !important;
+}
+
+#content-1 {
+	padding:120px 0;
+}
+
+#content-2 {
+	padding:120px 0;
+	background:#fff;
+	text-align:center;
+}
+
+.content-2-inner {
+	max-width:1400px;
+	margin:0 auto;
+}
+
+#content-2 img {
+	margin-bottom:20px;
+	border-radius: 200px;
+	width: 50%;
+}
+
+/* Content 3 */ 
+
+#content-3 {
+	background:url(../../assets/files/1/banner.jpg) fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+	color:#fff;
+	text-align:center;
+}
+
+.content-3-inner {
+	background:rgba(0,0,0,0.5);
+	padding:50px;
+}
+
+.content-3-services {
+	align-items:center;
+}
+
+#content-3 .block-background {
+	background:url(../../assets/files/1/banner.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+#content-3 .c3-right {
+    background-color: #eee;
+    padding: 120px;
+}
+
+#content-3 .c3-list-container {
+	background-color: #fff;
+    color: black;
+    padding: 100px;
+}
+
+#content-3 .c3-list-container .col-lg-12 {
+	margin-bottom: 50px; 
+}
+
+#content-3 .list-text {
+	text-align: left; 
+}
+
+#gallery {
+	margin:50px 0;
+}
+
+.posts {
+	background: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#post-author {
+	margin:50px 0;
+}
+
+#comments {
+	background: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+	margin-top:0;
+}
+
+input {
+	border-radius:0;
+}
+
+.blog-more {
+	text-align:right;
+	margin-top:20px;
+	color:#2091a8;
+	width:100%;
+}
+
+.blog-more a {
+	color:#2091a8 !important;
+}
+
+#top-bar i {
+	padding-left: 10px; 
+}
