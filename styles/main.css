@@ -1,59 +1,666 @@
 /* blank */ 
 
+@media (min-width: 979px) {
+
+.navbar {
+	justify-content: flex-end;
+	}
+	.logo-main-menu {
+		display: none; 
+	}
+}
+
+.logo-dropdown-left {
+	position: absolute; 
+	left: 0;
+}
+
+.logo-dropdown-right {
+	position: absolute; 
+	right: 0;
+}
+
+@media(max-width: 1200px) {
+	.logo-dropdown-left, 
+	.logo-dropdown-right {
+	display: none; 
+	}
+}
+
+
+
+@media(max-width: 979px) {
+	.logo-dropdown-left, 
+	.logo-dropdown-right  {
+	position: relative;
+	display: inline-block; 
+	}
+}
+
 html {font-size: 1em;}
 
 body {
   background:#f7f7f7;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px; 
-  line-height: 35px; 
-  color: #333;
+  font-size: 16px; 
+  line-height: 30px; 
+  color: #a9a9ab;
   font-weight: 200;
+}
+
+@media (max-width: 1000px) {
+	body {
+		font-size: 14px; 
+	}
 }
 
 a {
   	font-family: 'Open Sans', sans-serif;
-  	font-size: 18px; 
-  	font-weight: 800; 
+  	font-size: 16px; 
+  	font-weight: 500;
+  	letter-spacing: 0.5px; 
+  	color: #fff;
+  	text-transform: uppercase;
+  	transition: ease-in-out 0.3s;  
 }
 
-p { margin-bottom: 1.3em;
-    font-weight: 400;
-    letter-spacing: 0.6px;}
-
-h1, h2, h3, h4 {
-  margin: 0.414em 0 0.5em;
-  font-family: ;
-  font-weight: inherit;
-  line-height: 1.2;
+a:hover {
+	transition: ease-in-out 0.3s; 
+	color: #ede11b;
+	text-decoration: none; 
 }
 
-h1, h2, h3, h4 {  
+@media (max-width:1000px) {
+	a {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-transform: uppercase;
+	}
+}
+
+h1, h2, h4 {  
+    margin-top: 0;
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;}
+
+@media (max-width: 1400px) {
+	h1, h2, h4 {
+    font-size: 36px;
+    line-height: 45px;	
+	}
+}
+
+@media (max-width: 1000px) {
+	h1, h2, h4 {
+    font-size: 30px;
+    line-height: 38px;	
+	}
+}
+
+h3 {
   margin-top: 0;
-  font-size: 54px;
-  line-height: 70px; 
-  font-weight: 800;
-  font-family: 'Source Sans Pro', sans-serif;}
+  font-size: 24px;
+  line-height: 39px; 
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 800px) {
+	h3 {
+    font-size: 18px;
+    line-height: 35px;	
+	}
+}
 
 h5 { 
   font-family: 'Open Sans', sans-serif;
-  line-height: 40px;
-  font-size: 24px;
-  font-weight: 800; 
-
+  line-height: 45px;
+  font-size: 28px;
+  font-weight: 600; 
+  color: #ede11b; 
+  text-transform: uppercase; 
 }
 
-h6 {
-	font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
+@media (max-width: 800px) {
+	h5{
+    line-height: 30px;
+    font-size: 18px;
+	}
 }
 
 small, .font_small {font-size: 0.707em;}
 
 img {
 	max-width:100%;
+}
+
+/* CUSTOM */
+
+.max-width {
+	max-width: 1300px; 
+	margin: 0 auto; 
+} 
+
+
+/* NAVBAR */
+
+	.navbar {
+		background-color: transparent!important;
+		position: absolute; 
+		top: 0; 
+		z-index: 2; 
+		width: 100%; 
+	}
+
+  .navbar-nav {
+  	margin-top: 8px;
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+
+  .active a:hover{
+  	background-color: green; 
+  	color: #fff !important;  
+  }
+
+  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255,255,255,.9);
+}
+
+
+
+
+/* BANNER */ 
+
+.banner {
+	border: 1px solid black;
+	height: 100vh;
+	position: relative; 
+	background-image: url(../images/augusta-travel-main-banner-img.jpg);
+	z-index: 1; 
+	width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+	/* BANNER CONTAINER */
+
+.banner {
+	position: relative; 
+}
+
+.banner-container,
+.ic1-container,
+.ic4-container {
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    padding: 50px; 
+    color: #fff;
+    background-color: transparent; 
+}
+
+@media (max-width: 1600px) {
+	.banner-container,
+	.ic1-container,
+	.ic4-container {
+	padding: 0px; 
+	}
+}
+
+@media (max-width: 1400px) {
+	.banner-container,
+	.ic1-container,
+	.ic4-container {
+	width: 75%; 
+	}
+}
+
+@media (max-width: 1000px) {
+	.banner-container,
+	.ic1-container,
+	.ic4-container {
+	width: 100%; 
+	}
+}
+
+.banner-header-container, .ic4-header-container {
+    padding: 6% 6% 6%;
+}
+
+.banner-header-container,
+.ic4-header-container {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+    padding: 2% 6% 2%;
+    margin-bottom: 20px; 
+}
+
+.banner-container {
+	top: 45%; 
+}
+
+.banner-btn-div a,
+.ic1-btn-div a, 
+.ic4-btn-div a {
+	display: inline-block;
+    background-color: #ede11b; 
+    height: 55px;
+    width: 200px;
+    line-height: 52px; 
+    color: #000; 
+    text-decoration: none;
+    margin-top: 30px;
+    text-transform: uppercase; 
+    transition: ease-in-out 0.3s; 
+}
+
+.banner-btn-div a:hover,
+.ic1-btn-div a:hover, 
+.ic4-btn-div a:hover {
+	color: #006b27;
+
+}
+
+@media (max-width:1000px) {
+	.banner-btn-div a,
+	.ic1-btn-div a, 
+	.ic4-btn-div a {
+	display: inline-block;
+    background-color: #ede11b;
+    height: 45px;
+    width: 150px;
+    line-height: 43px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+	}
+}
+
+.banner-contact-content {
+	position: absolute;
+	bottom: 0; 
+	background-color: #000; 
+	width: 100%;
+	padding: 30px 4%;
+	z-index: 2;    
+}
+
+.bc-flex-container {
+	display: flex; 
+	flex-wrap: wrap; 
+	padding: 0 8%;
+}
+
+@media (max-width:1300px) {
+	.bc-flex-container { 
+	padding: 0%;
+	}
+}
+
+.bc-flex-block {
+	flex-basis: 48%; 
+	flex-grow: 1; 
+	margin: 0 1%; 
+	background-color: #1c1c1c; 
+	color: #a9a9ab; 
+	padding: 1% 4%;
+	font-weight: 100;  
+}
+
+@media (max-width:1000px) {
+	.bc-flex-block {
+	flex-basis: 98%; 
+	}
+	.bc-fb-1 {
+	margin-bottom: 10px; 
+	}
+}
+
+.bc-text {
+	font-size:1.5em; 
+	color:#ede11b; 
+	display: inline-block; 
+	padding-right: 3%; 
+}
+
+@media (max-width: 400px) {
+	.bcd-1 {
+	display: none; 
+	}
+	.bcd-2 {
+	text-align: center; 
+	padding: 2% 0;
+	}
+}
+
+.bcd-1,
+.ptd-fb-1 {
+	flex-basis: 15%; 
+}
+
+.bcd-2,
+.ptd-fb-2 {
+	flex-grow: 1; 
+}
+
+.ptd-flex-container,
+.bc-details-container {
+	display: flex;
+	padding: 2% 0%; 
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 140px;
+}
+
+/* INDEX CONTENT 1 */
+
+.index-content1,
+.index-content4 {
+	height: 100vh;
+	background-image: url(../images/augusta-travel-parallax-img-1.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.ic1-container {
+	background-color: #1c1c1c;
+	border: none;
+	padding: 80px 6%;
+}
+
+@media (max-width:1300px) {
+	.ic1-container {
+		width: 90%; 
+	}	
+}
+
+.ic1-container p {
+ 	color: #a9a9ab; 
+}
+
+.ic1-container h1 {
+	margin-bottom: 0px; 
+}
+
+.ic1-container h5 {
+	margin-bottom: 25px; 
+}
+
+.ic1-btn-div a {
+	background-color: #006b27;
+	color: #fff; 
+	transition: ease-in-out 0.3s
+}
+
+.ic1-btn-div a:hover {
+	color: #ede11b; 
+	transition: ease-in-out 0.3s;
+}
+
+.ic1-overlay,
+.ic4-overlay,
+.banner-overlay {
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 2;
+}
+
+.index-content1,
+.index-content4 {
+    background-attachment: fixed;
+}
+
+@media (max-width: 800px) {
+	.about-para-2 {
+	display: none;
+	} 
+}
+
+
+/* INDEX CONTENT 2 */
+
+.index-content2 {
+	padding: 60px; 
+	background-color: #eee;
+}
+
+.package-flex-container {
+	display: flex; 
+	flex-wrap: wrap; 
+}
+
+.package-flex-block {
+	flex-basis: 30%; 
+	flex-grow: 1; 
+	margin: 1%;
+	background-color: #1c1c1c; 
+	color: #fff;   
+}
+
+@media (max-width:1100px) {
+	.package-flex-block {
+		flex-basis: 48%;
+	}
+	.index-content2 {
+		padding: 4%;
+	
+	}
+}
+
+@media (max-width:600px) {
+	.package-flex-block {
+		flex-basis: 98%;
+	}
+	.index-content2 {
+		padding: 8% 2%
+	}
+}
+
+.package-img-div {
+	position: relative; 
+}
+
+.price-block {
+	position: absolute;
+    background: #ede11b;
+    padding: 5px 20px;
+    top: 20px;
+    right: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px; 
+}
+
+.pb-red {
+	background-color: red;
+	color: white; 
+}
+
+.price-heading-div {
+	border-bottom: 1px solid #fff; 
+}
+
+.price-heading-div, 
+.price-text-div {
+	padding: 20px; 
+}
+
+
+.price-link-div {
+	background-color: #006b27;
+    text-align: center;
+    padding: 20px;
+}
+
+.price-text-div ul {
+	list-style-type: none;
+	margin-left: 0;
+	padding: 5px;   
+}
+
+.ptd-fb-1 {
+	flex-basis: 10%;
+}
+
+.ptd-fb-2 {
+	color: #a9a9ab; 
+}
+
+.ptd-fb-1,
+.check-icon{
+	font-size:1em; 
+	color:#ede11b;
+}
+
+/* INDEX CONTENT 3 */
+
+.ic3-header  {
+	padding: 80px 0 60px 0;
+    color: white;
+    text-align: center; 
+}
+
+.index-content3,
+.content1,
+.content2 { 
+	background-color: #000;
+	position: relative;
+	padding: 80px 100px;   
+}
+
+.ic3-flex-container {
+	display: flex;
+    flex-wrap: wrap;
+    padding: 0px 5%;
+}
+
+@media (max-width: 1200px) {
+	.index-content3,
+	.content1,
+	.content2 {
+	padding: 4%; 
+	}
+	.ic3-flex-container {
+	padding: 0%; 
+	}	
+}
+
+.ic3-flex-block {
+	background-color: #1c1c1c; 
+	flex-basis: 44%;
+	flex-grow: 1;
+	margin: 1%;
+	text-align: center;
+	padding: 4% 3%; 
+	color: #fff;  
+}
+
+@media (max-width: 800px) {
+	.index-content3,
+	.content1,
+	.content2 {
+	padding: 8% 3%; 
+	}
+	.ic3-flex-block {
+	flex-basis: 98%;
+	margin: 2% 0%;  
+	}
+	.content1 {
+	padding: 8% 10%; 
+	}		
+}
+
+.ic3-flex-block h5 {
+	margin-top: 10px; 
+}
+
+.check-icon {
+	font-size:2em;
+}
+
+/* INDEX CONTENT 4 */
+
+.index-content4 {
+	height: calc(100vh - 65px);
+	background-image: url(../images/augusta-travel-parallax-img-2.jpg);
+} 
+
+/* FOOTER */
+
+.footer-flex-container {
+	display: flex; 
+	flex-wrap: wrap;
+	background-color: #000;
+	color: #fff;  
+}
+
+.footer-flex-block {
+	flex-basis: 47%;
+	margin: 1.5%; 
+}
+
+.ffb-1 {
+	float: left; 
+}
+
+.ffb-2 {
+	display: flex;
+    justify-content: flex-end;
+}
+
+.ffb-1 img {
+	width: 50px; 
+	display: inline-block; 
+}
+
+.ffb-2 img {
+	height: 50px; 
+}
+
+@media (max-width: 800px) {
+	
+	.footer-flex-container {
+    padding: 3%;
+	}
+	.footer-flex-block {
+    flex-basis: 98%;
+	}
+	.ffb-1, .ffb-2 {
+    float: none;
+    justify-content: center;
+    display: inherit;
+	}
+	.ffb-1 img {
+    padding: 0% 8%;
+	}
 }
 
 .top-bar {
@@ -122,18 +729,38 @@ img {
     text-align: center;
     width: 100%;
 	justify-content:center;
+	margin-top: 10px; 
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ccc;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ede11b;
+}
+
 .nav-link {
-	padding:10px 20px !important;
+	padding:8px 30px !important;
+	    margin: 0px 2px; 
+}
+
+@media (max-width: 979px) {
+
+	.navbar {
+    background-color: #000 !important;
+    justify-content: flex-end; 
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+	}
+	.logo-main-menu {
+		display: none; 
+	}
+	.navbar-toggler {
+		background-color: #006b27;
+	}
 }
 
 .slick-slide img {
@@ -331,3 +958,97 @@ input {
 #top-bar i {
 	padding-left: 10px; 
 }
+
+/* ABOUT US */ 
+
+
+.general-banner {
+	max-height: 500px;  
+    background-image: url(../images/augusta-travel-about-banner-img.jpg); 
+}
+
+.contact-banner {
+	background-image: url(../images/augusta-travel-contact-banner-img.jpg);
+}
+
+.general-banner .banner-container {
+	top: 55%; 
+}
+
+/* CONTENT 1 */
+
+.content1 {
+	background-color: #1c1c1c;
+	margin-top: 6px; 
+}
+
+.about-inner-container {
+	background-color: #000; 
+	padding: 40px;  
+}
+
+.about-intro-text {
+	margin-bottom: 60px; 
+}
+
+.aib-1 {
+	margin-bottom: 40px;
+}
+
+
+/* CONTENT 2 */
+
+.content-2-flex-container {
+	display: flex;  
+	flex-wrap: wrap; 
+}
+
+.c2-fb { 
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;  
+
+}
+
+.cb-inner-flex {
+	background-color: #1c1c1c;
+	margin: 2%; 
+	padding: 5%;
+}
+
+.cb-inner-flex h3 {
+	color: #ede11b;
+	margin-top: 20px; 
+
+}
+
+@media (max-width: 800px) {
+.c2-fb {
+	flex-basis: 100%;
+	}
+}
+
+/* CONTACT */
+
+.contact-flex-container {
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+.contact-flex-block {
+	flex-basis: 48%; 
+	margin: 1%;
+	padding: 4%;  
+	background-color: #000; 
+}
+
+.contact-flex-container ul {
+	list-style-type: none; 
+	padding-left: 0px; 
+}
+
+.contact-flex-container h3 {
+	padding-bottom: 40px;  
+}
+
+
